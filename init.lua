@@ -18,13 +18,12 @@ vim.g.mapleader = " "
 require("lazy").setup("plugins")
 
 --------------------------------------------------------------------------------
---------------------------------------------------------------------------------
--- Key Mappings 
+-- Modules
+require("core.keymap")
+require("core.colors")
 
-vim.keymap.set("n", "<leader>t", ":Neotree<CR>")
-
---------------------------------------------------------------------------------
-
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -52,7 +51,6 @@ vim.opt.signcolumn = "yes"
 -- vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
-
 
 -- Time in milliseconds to wait for a mapped sequence to complete.
 vim.opt.timeoutlen = 300
