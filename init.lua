@@ -19,6 +19,11 @@ require("lazy").setup("plugins")
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
+-- Key Mappings 
+
+vim.keymap.set("n", "<leader>t", ":Neotree<CR>")
+
+--------------------------------------------------------------------------------
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -48,5 +53,7 @@ vim.opt.signcolumn = "yes"
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "80"
+
+-- Time in milliseconds to wait for a mapped sequence to complete.
+vim.opt.timeoutlen = 300
 
