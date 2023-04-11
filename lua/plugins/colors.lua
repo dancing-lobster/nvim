@@ -11,4 +11,6 @@ return {
         vim.cmd([[colorscheme tokyonight]])
     end,
     },
+
+    "joshdick/onedark.vim",
 } 
