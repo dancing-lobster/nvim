@@ -13,16 +13,14 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- Make sure to set `mapleader` before lazy so your mappings are correct
-vim.g.mapleader = " " 
+vim.g.mapleader = " "
 
 require("lazy").setup("plugins")
-
 --------------------------------------------------------------------------------
 -- Modules
 require("config.keymap")
 require("config.editor")
-
 require("lualine").setup()
+
+require("config.lsp-config")
 require("mason").setup()
--------------------------------------------------------------------------------
--------------------------------------------------------------------------------
