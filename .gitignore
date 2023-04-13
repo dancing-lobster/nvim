@@ -1,1 +1,4 @@
-node_mopdules/
+/node_modules/
+
+package.json
+package-lock.json
