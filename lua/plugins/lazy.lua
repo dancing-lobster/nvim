@@ -1,10 +1,6 @@
 return {
 
     -- LSP --------------------------------------------------------------------
-    {
-    "williamboman/mason.nvim",
-    build = ":MasonUpdate" -- :MasonUpdate updates registry contents
-    },
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
     "VonHeikemen/lsp-zero.nvim",
@@ -16,10 +12,20 @@ return {
     'hrsh7th/cmp-cmdline',
     'hrsh7th/nvim-cmp',
 
+    {
+	"L3MON4D3/LuaSnip",
+	-- follow latest release.
+	version = "<CurrentMajor>.*",
+	-- install jsregexp (optional!).
+	build = "make install_jsregexp"
+    },
     -- Lualine ----------------------------------------------------------------
     {
     'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons'}
+    dependencies = { 'nvim-tree/nvim-web-devicons'},
+    config = function()
+        require("lualine").setup()
+    end,
     },
 
     -- Telescope --------------------------------------------------------------
@@ -50,7 +56,7 @@ return {
     end,
 },
     -- WhichKey ---------------------------------------------------------------
-{ 
+{
     "folke/which-key.nvim",
     config = function()
         vim.o.timeout = true
