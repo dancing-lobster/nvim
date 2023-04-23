@@ -5,12 +5,6 @@ return {
     "neovim/nvim-lspconfig",
     "VonHeikemen/lsp-zero.nvim",
 
-    -- Autocomplete -----------------------------------------------------------
-    'hrsh7th/cmp-nvim-lsp',
-    'hrsh7th/cmp-buffer',
-    'hrsh7th/cmp-path',
-    'hrsh7th/cmp-cmdline',
-    'hrsh7th/nvim-cmp',
 
     {
         "L3MON4D3/LuaSnip",
@@ -18,14 +12,6 @@ return {
         version = "<CurrentMajor>.*",
         -- install jsregexp (optional!).
         build = "make install_jsregexp"
-    },
-    -- Lualine ----------------------------------------------------------------
-    {
-        'nvim-lualine/lualine.nvim',
-        dependencies = { 'nvim-tree/nvim-web-devicons' },
-        config = function()
-            require("lualine").setup()
-        end,
     },
 
     -- Telescope --------------------------------------------------------------

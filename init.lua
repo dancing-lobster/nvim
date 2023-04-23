@@ -22,3 +22,5 @@ require("config.keymap")
 require("config.editor")
 
 require("config.lsp-config")
+vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
+
