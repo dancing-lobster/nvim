@@ -1,9 +1,7 @@
 return {
 
     -- LSP --------------------------------------------------------------------
-    "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
-    "VonHeikemen/lsp-zero.nvim",
 
 
     {
